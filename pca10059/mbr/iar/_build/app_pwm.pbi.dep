@@ -1,0 +1,72 @@
+app_pwm.pbi: \
+  C:\Users\BertLenovo\Downloads\nRF5_2\components\libraries\pwm\app_pwm.c \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\libraries\util\sdk_common.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdint.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Defaults.h \
+  C:\\Program\ Files\ (x86)\\IAR\ Systems\\Embedded\ Workbench\ 8.3\\arm\\inc\\c\\DLib_Config_Full.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdbool.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\string.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ysizet.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product_string.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\config\sdk_config.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\libraries\util/nordic_common.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\mdk\compiler_abstraction.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\libraries\util/sdk_os.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\libraries\util/sdk_errors.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd\nrf_error.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\libraries\util/app_util.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stddef.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\mdk\nrf.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\mdk/nrf52840.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\toolchain\cmsis\include\core_cm4.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\toolchain\cmsis\include/core_cmInstr.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\cmsis_iar.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c/iccarm_builtin.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\toolchain\cmsis\include/core_cmFunc.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\toolchain\cmsis\include/core_cmSimd.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\mdk/system_nrf52840.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\mdk/nrf52840_bitfields.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\mdk/nrf51_to_nrf52840.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\mdk/nrf52_to_nrf52840.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\mdk/compiler_abstraction.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\softdevice\mbr\nrf52840\headers\nrf_mbr.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\softdevice\mbr\nrf52840\headers/nrf_svc.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\libraries\util/sdk_macros.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\libraries\util/nrf_assert.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\components\libraries\pwm/app_pwm.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\libraries\util\sdk_errors.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_timer.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_timer.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\nrfx.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\integration\nrfx\nrfx_config.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\drivers/nrfx_common.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\mdk\nrf_peripherals.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\mdk/nrf52840_peripherals.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\integration\nrfx\nrfx_glue.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\integration\nrfx\legacy/apply_old_config.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\soc/nrfx_irqs.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\soc/nrfx_irqs_nrf52840.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\libraries\util\nrf_assert.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\libraries\util\app_util.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\libraries\util\nordic_common.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\libraries\util\app_util_platform.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\libraries\util/app_error.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdio.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\libraries\util/app_error_weak.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\soc/nrfx_coredep.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\soc/nrfx_atomic.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\components\libraries\util\sdk_resources.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\drivers/nrfx_errors.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\hal/nrf_timer.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_ppi.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_ppi.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\hal/nrf_ppi.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_gpiote.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\drivers\include\nrfx_gpiote.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\hal/nrf_gpiote.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\hal/nrf_gpio.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\hal\nrf_gpiote.h \
+  C:\Users\BertLenovo\Downloads\nRF5_2\examples\zigbee\light_control\light_bulb\pca10059\mbr\iar\..\..\..\..\..\..\..\modules\nrfx\hal\nrf_gpio.h

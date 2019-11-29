@@ -1,0 +1,96 @@
+#Generating source browse information for project zigbee_light_bulb_pca10059_mbr
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build main.pbi : index main.xcl
+build boards.pbi : index boards.xcl
+build bsp.pbi : index bsp.xcl
+build drv_ws2812.pbi : index drv_ws2812.xcl
+build system_nrf52840.pbi : index system_nrf52840.xcl
+build nrf_drv_clock.pbi : index nrf_drv_clock.xcl
+build nrf_drv_ppi.pbi : index nrf_drv_ppi.xcl
+build nrf_drv_rng.pbi : index nrf_drv_rng.xcl
+build nrf_drv_uart.pbi : index nrf_drv_uart.xcl
+build nrf_ecb.pbi : index nrf_ecb.xcl
+build nrf_nvic.pbi : index nrf_nvic.xcl
+build nrf_nvmc.pbi : index nrf_nvmc.xcl
+build nrf_soc.pbi : index nrf_soc.xcl
+build nrfx_atomic.pbi : index nrfx_atomic.xcl
+build nrfx_clock.pbi : index nrfx_clock.xcl
+build nrfx_gpiote.pbi : index nrfx_gpiote.xcl
+build nrfx_ppi.pbi : index nrfx_ppi.xcl
+build nrfx_prs.pbi : index nrfx_prs.xcl
+build nrfx_pwm.pbi : index nrfx_pwm.xcl
+build nrfx_rng.pbi : index nrfx_rng.xcl
+build nrfx_systick.pbi : index nrfx_systick.xcl
+build nrfx_timer.pbi : index nrfx_timer.xcl
+build nrfx_uart.pbi : index nrfx_uart.xcl
+build nrfx_uarte.pbi : index nrfx_uarte.xcl
+build app_button.pbi : index app_button.xcl
+build app_error.pbi : index app_error.xcl
+build app_error_handler_iar.pbi : index app_error_handler_iar.xcl
+build app_gpiote.pbi : index app_gpiote.xcl
+build app_pwm.pbi : index app_pwm.xcl
+build app_scheduler.pbi : index app_scheduler.xcl
+build app_timer.pbi : index app_timer.xcl
+build app_util_platform.pbi : index app_util_platform.xcl
+build assert.pbi : index assert.xcl
+build nrf_assert.pbi : index nrf_assert.xcl
+build nrf_atomic.pbi : index nrf_atomic.xcl
+build nrf_balloc.pbi : index nrf_balloc.xcl
+build nrf_fprintf.pbi : index nrf_fprintf.xcl
+build nrf_fprintf_format.pbi : index nrf_fprintf_format.xcl
+build nrf_fstorage.pbi : index nrf_fstorage.xcl
+build nrf_fstorage_nvmc.pbi : index nrf_fstorage_nvmc.xcl
+build nrf_memobj.pbi : index nrf_memobj.xcl
+build nrf_pwr_mgmt.pbi : index nrf_pwr_mgmt.xcl
+build nrf_queue.pbi : index nrf_queue.xcl
+build nrf_ringbuf.pbi : index nrf_ringbuf.xcl
+build nrf_section_iter.pbi : index nrf_section_iter.xcl
+build nrf_strerror.pbi : index nrf_strerror.xcl
+build nrf_log_backend_serial.pbi : index nrf_log_backend_serial.xcl
+build nrf_log_backend_uart.pbi : index nrf_log_backend_uart.xcl
+build nrf_log_default_backends.pbi : index nrf_log_default_backends.xcl
+build nrf_log_frontend.pbi : index nrf_log_frontend.xcl
+build nrf_log_str_formatter.pbi : index nrf_log_str_formatter.xcl
+build zigbee_helpers.pbi : index zigbee_helpers.xcl
+build zigbee_logger_eprxzcl.pbi : index zigbee_logger_eprxzcl.xcl
+build zb_error_to_string.pbi : index zb_error_to_string.xcl
+build zb_nrf52840_common.pbi : index zb_nrf52840_common.xcl
+build zb_nrf52840_nrf_logger.pbi : index zb_nrf52840_nrf_logger.xcl
+build zb_nrf52840_nvram.pbi : index zb_nrf52840_nvram.xcl
+build zb_nrf52840_ota.pbi : index zb_nrf52840_ota.xcl
+build zb_nrf52840_sdk_config_deps.pbi : index zb_nrf52840_sdk_config_deps.xcl
+build zb_nrf52840_timer.pbi : index zb_nrf52840_timer.xcl
+build zb_zcl_common_addons.pbi : index zb_zcl_common_addons.xcl
+build zb_zcl_ota_upgrade_addons.pbi : index zb_zcl_ota_upgrade_addons.xcl
+build zigbee_light_bulb_pca10059_mbr_part0.pbi : link main.pbi boards.pbi bsp.pbi drv_ws2812.pbi system_nrf52840.pbi nrf_drv_clock.pbi nrf_drv_ppi.pbi nrf_drv_rng.pbi
+build zigbee_light_bulb_pca10059_mbr_part1.pbi : link nrf_drv_uart.pbi nrf_ecb.pbi nrf_nvic.pbi nrf_nvmc.pbi nrf_soc.pbi nrfx_atomic.pbi nrfx_clock.pbi nrfx_gpiote.pbi
+build zigbee_light_bulb_pca10059_mbr_part2.pbi : link nrfx_ppi.pbi nrfx_prs.pbi nrfx_pwm.pbi nrfx_rng.pbi nrfx_systick.pbi nrfx_timer.pbi nrfx_uart.pbi nrfx_uarte.pbi
+build zigbee_light_bulb_pca10059_mbr_part3.pbi : link app_button.pbi app_error.pbi app_error_handler_iar.pbi app_gpiote.pbi app_pwm.pbi app_scheduler.pbi app_timer.pbi app_util_platform.pbi
+build zigbee_light_bulb_pca10059_mbr_part4.pbi : link assert.pbi nrf_assert.pbi nrf_atomic.pbi nrf_balloc.pbi nrf_fprintf.pbi nrf_fprintf_format.pbi nrf_fstorage.pbi nrf_fstorage_nvmc.pbi
+build zigbee_light_bulb_pca10059_mbr_part5.pbi : link nrf_memobj.pbi nrf_pwr_mgmt.pbi nrf_queue.pbi nrf_ringbuf.pbi nrf_section_iter.pbi nrf_strerror.pbi nrf_log_backend_serial.pbi nrf_log_backend_uart.pbi
+build zigbee_light_bulb_pca10059_mbr_part6.pbi : link nrf_log_default_backends.pbi nrf_log_frontend.pbi nrf_log_str_formatter.pbi zigbee_helpers.pbi zigbee_logger_eprxzcl.pbi zb_error_to_string.pbi zb_nrf52840_common.pbi zb_nrf52840_nrf_logger.pbi
+build zigbee_light_bulb_pca10059_mbr_part7.pbi : link zb_nrf52840_nvram.pbi zb_nrf52840_ota.pbi zb_nrf52840_sdk_config_deps.pbi zb_nrf52840_timer.pbi zb_zcl_common_addons.pbi zb_zcl_ota_upgrade_addons.pbi
+build zigbee_light_bulb_pca10059_mbr.pbd : link zigbee_light_bulb_pca10059_mbr_part0.pbi zigbee_light_bulb_pca10059_mbr_part1.pbi zigbee_light_bulb_pca10059_mbr_part2.pbi zigbee_light_bulb_pca10059_mbr_part3.pbi zigbee_light_bulb_pca10059_mbr_part4.pbi zigbee_light_bulb_pca10059_mbr_part5.pbi zigbee_light_bulb_pca10059_mbr_part6.pbi zigbee_light_bulb_pca10059_mbr_part7.pbi
+build zigbee_light_bulb_pca10059_mbr.pbw : browsedata zigbee_light_bulb_pca10059_mbr.pbd
+
+

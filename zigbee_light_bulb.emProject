@@ -1,0 +1,246 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="zigbee_cli" target="8" version="2">
+  <configuration
+    Name="External IAR"
+    build_generic_options_file_name="$(StudioDir)/targets/IAR_build_options.xml"
+    hidden="Yes"
+    macros="IAR_TOOLKIT_DIR=C:/Program Files (x86)/IAR Systems/Embedded Workbench 8.3/arm" />
+  <configuration Name="Internal" hidden="Yes" />
+  <configuration
+    Name="nrf52840_xxaa External"
+    inherited_configurations="External IAR;nrf52840_xxaa" />
+  <configuration
+    Name="nrf52840_xxaa Internal"
+    inherited_configurations="Internal;nrf52840_xxaa" />
+  <configuration Name="nrf52840_xxaa" hidden="Yes" />
+  <project Name="zigbee_cli">
+    <configuration
+      Name="Common"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_simulator_memory_simulation_parameter="RX 00000000,00100000,FFFFFFFF;RWX 20000000,00040000,CDCDCDCD"
+      arm_target_device_name="nRF52840_xxAA"
+      arm_target_interface_type="SWD"
+      debug_start_from_entry_point_symbol="No"
+      debug_target_connection="J-Link"
+      linker_section_placements_segments="FLASH1 RX 0x00000000 0x00100000;RAM1 RWX 0x20000000 0x00040000"
+      project_directory="pca10059/mbr/iar"
+      project_type="Executable" />
+    <configuration
+      Name="Internal"
+      arm_linker_variant="SEGGER"
+      build_intermediate_directory="Output/$(ProjectName) $(Configuration)/Obj"
+      build_output_directory="Output/$(Configuration)/Exe"
+      build_output_file_name="$(OutDir)/$(ProjectName)$(EXE)"
+      link_linker_script_file="$(StudioDir)/samples/SEGGER_Flash.icf"
+      link_use_linker_script_file="No" />
+    <configuration
+      Name="External IAR"
+      project_type="Externally Built Executable" />
+    <folder Name="Internal Files">
+      <configuration Name="Common" build_exclude_from_build="Yes" />
+      <configuration Name="Internal" build_exclude_from_build="No" />
+      <file file_name="$(StudioDir)/samples/Cortex_M_Startup.s" />
+      <file file_name="$(StudioDir)/samples/SEGGER_THUMB_Startup.s" />
+    </folder>
+    <configuration
+      Name="nrf52840_xxaa"
+      build_intermediate_directory="_build"
+      build_output_directory="_build"
+      c_preprocessor_definitions="BOARD_PCA10059;CONFIG_GPIO_AS_PINRESET;ENABLE_FEM;FLOAT_ABI_HARD;MBR_PRESENT;NRF52840_XXAA;SWI_DISABLE0;ZB_TRACE_LEVEL=0;ZB_TRACE_MASK=0"
+      c_user_include_directories=";./../../../config;./../../../../../../../components;./../../../../../../../components/boards;./../../../../../../../components/drivers_nrf/nrf_soc_nosd;./../../../../../../../components/libraries/atomic;./../../../../../../../components/libraries/balloc;./../../../../../../../components/libraries/bsp;./../../../../../../../components/libraries/button;./../../../../../../../components/libraries/delay;./../../../../../../../components/libraries/experimental_section_vars;./../../../../../../../components/libraries/fstorage;./../../../../../../../components/libraries/gpiote;./../../../../../../../components/libraries/log;./../../../../../../../components/libraries/log/src;./../../../../../../../components/libraries/memobj;./../../../../../../../components/libraries/mutex;./../../../../../../../components/libraries/pwm;./../../../../../../../components/libraries/pwr_mgmt;./../../../../../../../components/libraries/queue;./../../../../../../../components/libraries/ringbuf;./../../../../../../../components/libraries/scheduler;./../../../../../../../components/libraries/strerror;./../../../../../../../components/libraries/timer;./../../../../../../../components/libraries/util;./../../../../../../../components/softdevice/mbr/nrf52840/headers;./../../../../../../../components/toolchain/cmsis/include;./../../../../../../../components/zigbee/common;./../../../../../app_utils/ws2812;./../../..;./../../../../../../../external/fprintf;./../../../../../../../external/nRF-IEEE-802.15.4-radio-driver/src;./../../../../../../../external/nRF-IEEE-802.15.4-radio-driver/src/fem;./../../../../../../../external/nRF-IEEE-802.15.4-radio-driver/src/mac_features;./../../../../../../../external/nRF-IEEE-802.15.4-radio-driver/src/mac_features/ack_generator;./../../../../../../../external/nRF-IEEE-802.15.4-radio-driver/src/rsch;./../../../../../../../external/zboss/addons;./../../../../../../../external/zboss/include;./../../../../../../../external/zboss/include/ha;./../../../../../../../external/zboss/include/osif;./../../../../../../../external/zboss/include/zcl;./../../../../../../../external/zboss/osif;./../../../../../../../external/zboss/zb_error;./../../../../../../../integration/nrfx;./../../../../../../../integration/nrfx/legacy;./../../../../../../../modules/nrfx;./../../../../../../../modules/nrfx/drivers/include;./../../../../../../../modules/nrfx/hal;./../../../../../../../modules/nrfx/mdk;./../config"
+      link_linker_script_file="./zigbee_light_bulb_iar_nRF5x.icf"
+      link_use_linker_script_file="Yes" />
+    <configuration
+      Name="nrf52840_xxaa External"
+      asm_additional_options="-I./../../../config;-I./../../../config/iar;-I./../../../../../../../components;-I./../../../../../../../components/boards;-I./../../../../../../../components/drivers_nrf/nrf_soc_nosd;-I./../../../../../../../components/libraries/atomic;-I./../../../../../../../components/libraries/balloc;-I./../../../../../../../components/libraries/bsp;-I./../../../../../../../components/libraries/button;-I./../../../../../../../components/libraries/delay;-I./../../../../../../../components/libraries/experimental_section_vars;-I./../../../../../../../components/libraries/fstorage;-I./../../../../../../../components/libraries/gpiote;-I./../../../../../../../components/libraries/log;-I./../../../../../../../components/libraries/log/src;-I./../../../../../../../components/libraries/memobj;-I./../../../../../../../components/libraries/mutex;-I./../../../../../../../components/libraries/pwm;-I./../../../../../../../components/libraries/pwr_mgmt;-I./../../../../../../../components/libraries/queue;-I./../../../../../../../components/libraries/ringbuf;-I./../../../../../../../components/libraries/scheduler;-I./../../../../../../../components/libraries/strerror;-I./../../../../../../../components/libraries/timer;-I./../../../../../../../components/libraries/util;-I./../../../../../../../components/libraries/fds;-I./../../../../../../../components/libraries/cli;-I./../../../../../../../components/libraries/cli/cdc_acm;-I./../../../../../../../components/softdevice/mbr/nrf52840/headers;-I./../../../../../../../components/toolchain/cmsis/include;-I./../../../../../../../components/zigbee/common;-I./../../../../../app_utils/ws2812;-I./../../..;-I./../../../../../../../external/fprintf;-I./../../../../../../../external/nRF-IEEE-802.15.4-radio-driver/src;-I./../../../../../../../external/nRF-IEEE-802.15.4-radio-driver/src/fem;-I./../../../../../../../external/nRF-IEEE-802.15.4-radio-driver/src/mac_features;-I./../../../../../../../external/nRF-IEEE-802.15.4-radio-driver/src/mac_features/ack_generator;-I./../../../../../../../external/nRF-IEEE-802.15.4-radio-driver/src/rsch;-I./../../../../../../../external/zboss/addons;-I./../../../../../../../external/zboss/include;-I./../../../../../../../external/zboss/include/ha;-I./../../../../../../../external/zboss/include/osif;-I./../../../../../../../external/zboss/include/zcl;-I./../../../../../../../external/zboss/osif;-I./../../../../../../../external/zboss/zb_error;-I./../../../../../../../integration/nrfx;-I./../../../../../../../integration/nrfx/legacy;-I./../../../../../../../modules/nrfx;-I./../../../../../../../modules/nrfx/src;-I./../../../../../../../modules/nrfx/drivers/include;-I./../../../../../../../modules/nrfx/hal;-I./../../../../../../../modules/nrfx/mdk;-I./../config"
+      build_output_file_name="$(OutDir)/zigbee_light_bulb_pca10059_mbr.out"
+      c_additional_options="--dlib_config &quot;$(IAR_TOOLKIT_DIR)/inc/c/DLib_Config_Full.h&quot;;-e"
+      c_additional_options_backup=";--cpu;Cortex-M4;--fpu;FPv4-SP;--dlib_config &quot;$(IAR_TOOLKIT_DIR)/inc/c/DLib_Config_Full.h&quot;;-e;-Ohs"
+      c_preprocessor_definitions=""
+      iar_cl_cpu="Cortex-M4"
+      iar_cl_fpu="FPv4-SP"
+      iar_cl_optimization_level="High (speed)"
+      linker_additional_options=";--semihosting;--entry;__iar_program_start"
+      linker_post_build_command="&quot;$(IAR_TOOLKIT_DIR)/bin/ielftool&quot; &quot;$(RelTargetPath)&quot; &quot;$(PostLinkOutputFilePath)&quot; --ihex --silent"
+      linker_post_build_command_output_file="_build/zigbee_light_bulb_pca10059_mbr.hex" />
+    <folder Name="Application">
+      <file file_name="main.c" />
+      <file file_name="sdk_config.h" />
+      <file file_name="usb_cli.c" />
+      <file file_name="usb_main.c" />
+      <file file_name="usb_main.h" />
+    </folder>
+    <folder Name="Board Definition">
+      <file file_name="./../../../../../../../components/boards/boards.c" />
+    </folder>
+    <folder Name="Board Support">
+      <file file_name="./../../../../../../../components/libraries/bsp/bsp.c" />
+    </folder>
+    <folder Name="Example">
+      <file file_name="./../../../../../app_utils/ws2812/drv_ws2812.c" />
+    </folder>
+    <folder Name="None">
+      <file file_name="./../../../../../../../modules/nrfx/mdk/iar_startup_nrf52840.s">
+        <configuration Name="Internal" build_exclude_from_build="Yes" />
+      </file>
+      <file file_name="./../../../../../../../modules/nrfx/mdk/system_nrf52840.c" />
+    </folder>
+    <folder Name="nRF_Drivers">
+      <file file_name="nrf_drv_clock.c" />
+      <file file_name="nrf_drv_ppi.c" />
+      <file file_name="nrf_drv_rng.c" />
+      <file file_name="nrf_drv_uart.c" />
+      <file file_name="nrf_ecb.c" />
+      <file file_name="nrf_nvic.c" />
+      <file file_name="nrf_nvmc.c" />
+      <file file_name="nrf_soc.c" />
+      <file file_name="nrfx_atomic.c" />
+      <file file_name="nrfx_clock.c" />
+      <file file_name="nrfx_gpiote.c" />
+      <file file_name="nrfx_ppi.c" />
+      <file file_name="nrfx_prs.c" />
+      <file file_name="nrfx_pwm.c" />
+      <file file_name="nrfx_rng.c" />
+      <file file_name="nrfx_systick.c" />
+      <file file_name="nrfx_timer.c" />
+      <file file_name="nrfx_usbd.c" />
+      <file file_name="nrfx_atomic.h" />
+      <file file_name="nrfx_atomic_internal.h" />
+      <file file_name="nrfx_prs.h" />
+      <file file_name="nrfx_usbd_errata.h" />
+      <file file_name="nrfx_uart.c" />
+      <file file_name="nrfx_uarte.c" />
+      <file file_name="nrfx_power.c" />
+      <file file_name="nrf_drv_power.c" />
+      <file file_name="nrf_drv_power.h" />
+    </folder>
+    <folder Name="nRF_Libraries">
+      <file file_name="app_button.c" />
+      <file file_name="app_error.c" />
+      <file file_name="app_error_handler_iar.c" />
+      <file file_name="app_gpiote.c" />
+      <file file_name="app_pwm.c" />
+      <file file_name="app_scheduler.c" />
+      <file file_name="app_timer.c" />
+      <file file_name="app_util_platform.c" />
+      <file file_name="assert.c" />
+      <file file_name="nrf_assert.c" />
+      <file file_name="nrf_atomic.c" />
+      <file file_name="nrf_balloc.c" />
+      <file file_name="nrf_fprintf.c" />
+      <file file_name="nrf_fprintf_format.c" />
+      <file file_name="nrf_fstorage.c" />
+      <file file_name="nrf_fstorage_nvmc.c" />
+      <file file_name="nrf_memobj.c" />
+      <file file_name="nrf_pwr_mgmt.c" />
+      <file file_name="nrf_queue.c" />
+      <file file_name="nrf_ringbuf.c" />
+      <file file_name="nrf_section_iter.c" />
+      <file file_name="nrf_strerror.c" />
+      <file file_name="nrf_cli_cdc_acm.c" />
+      <file file_name="nrf_cli.c" />
+      <file file_name="nrf_cli.h" />
+      <file file_name="nrf_cli_types.h" />
+      <file file_name="nrf_cli_cdc_acm.h" />
+      <file file_name="app_usbd_cdc_acm.c" />
+      <file file_name="app_usbd_cdc_acm.h" />
+      <file file_name="app_usbd_class_base.h" />
+      <file file_name="app_usbd_types.h" />
+      <file file_name="app_usbd.c" />
+      <file file_name="app_usbd.h">
+        <configuration
+          Name="nrf52840_xxaa External"
+          build_exclude_from_build="No" />
+      </file>
+      <file file_name="app_usbd_core.c" />
+      <file file_name="app_usbd_descriptor.h" />
+      <file file_name="app_usbd_langid.h" />
+      <file file_name="app_usbd_request.h" />
+      <file file_name="app_usbd_serial_num.c" />
+      <file file_name="app_usbd_serial_num.h" />
+      <file file_name="app_usbd_string_desc.c" />
+      <file file_name="app_usbd_string_desc.h" />
+      <file file_name="app_usbd_cdc_desc.h" />
+      <file file_name="app_usbd_cdc_types.h" />
+      <file file_name="app_usbd_cdc_acm_internal.h" />
+      <file file_name="nrf_cli_types.h" />
+      <file file_name="nrf_cli_vt100.h" />
+      <file file_name="fnmatch.c" />
+      <file file_name="fnmatch.h" />
+      <file file_name="utf.c" />
+      <file file_name="utf.h" />
+      <file file_name="fds.c" />
+      <file file_name="fds.h" />
+      <file file_name="fds_internal_defs.h" />
+      <file file_name="nrf_atfifo.c" />
+      <file file_name="nrf_atfifo.h" />
+      <file file_name="nrf_atfifo_internal.h" />
+    </folder>
+    <folder Name="nRF_Log">
+      <file file_name="./../../../../../../../components/libraries/log/src/nrf_log_backend_serial.c" />
+      <file file_name="./../../../../../../../components/libraries/log/src/nrf_log_backend_uart.c" />
+      <file file_name="nrf_log_default_backends.c" />
+      <file file_name="nrf_log_frontend.c" />
+      <file file_name="./../../../../../../../components/libraries/log/src/nrf_log_str_formatter.c" />
+      <file file_name="nrf_log_backend_flash.c" />
+    </folder>
+    <folder Name="nRF_Zigbee">
+      <file file_name="./../../../../../../../components/zigbee/common/zigbee_helpers.c" />
+      <file file_name="./../../../../../../../components/zigbee/common/zigbee_logger_eprxzcl.c" />
+    </folder>
+    <folder Name="Zigbee">
+      <file file_name="./../../../../../../../external/zboss/lib/iar/libzboss.a" />
+      <file file_name="./../../../../../../../external/zboss/lib/iar/nrf_radio_driver.a" />
+      <file file_name="./../../../../../../../external/zboss/zb_error/zb_error_to_string.c" />
+      <file file_name="./../../../../../../../external/zboss/osif/zb_nrf52840_common.c" />
+      <file file_name="./../../../../../../../external/zboss/osif/zb_nrf52840_nrf_logger.c" />
+      <file file_name="./../../../../../../../external/zboss/osif/zb_nrf52840_nvram.c" />
+      <file file_name="./../../../../../../../external/zboss/osif/zb_nrf52840_ota.c" />
+      <file file_name="./../../../../../../../external/zboss/osif/zb_nrf52840_sdk_config_deps.c" />
+      <file file_name="./../../../../../../../external/zboss/osif/zb_nrf52840_timer.c" />
+      <file file_name="./../../../../../../../external/zboss/addons/zcl/zb_zcl_common_addons.c" />
+      <file file_name="./../../../../../../../external/zboss/addons/zcl/zb_zcl_ota_upgrade_addons.c" />
+    </folder>
+    <folder Name="nRF_Core">
+      <file file_name="nrf_stack_guard.c" />
+      <file file_name="nrf_stack_guard.h" />
+      <file file_name="nrf_mpu_lib.c" />
+      <file file_name="nrf_mpu_lib.h" />
+    </folder>
+    <folder Name="include">
+      <file file_name="zb_address.h" />
+      <file file_name="zb_config.h" />
+      <file file_name="zb_config_common.h" />
+      <file file_name="zb_debug.h" />
+      <file file_name="zb_errors.h" />
+      <file file_name="zb_ha.h" />
+      <file file_name="zb_led_button.h" />
+      <file file_name="zb_list_macros.h" />
+      <file file_name="zb_mem_config_common.h" />
+      <file file_name="zb_mem_config_context.h" />
+      <file file_name="zb_mem_config_max.h" />
+      <file file_name="zb_mem_config_med.h" />
+      <file file_name="zb_mem_config_min.h" />
+      <file file_name="zb_pooled_list.h" />
+      <file file_name="zb_revision.h" />
+      <file file_name="zb_ringbuffer.h" />
+      <file file_name="zb_trace.h" />
+      <file file_name="zb_types.h" />
+      <file file_name="zb_vendor.h" />
+      <file file_name="zb_version.h" />
+      <file file_name="zb_zgp_default_match_info.h" />
+      <file file_name="zboss_api.h" />
+      <file file_name="zboss_api_af.h" />
+      <file file_name="zboss_api_aps.h" />
+      <file file_name="zboss_api_core.h" />
+      <file file_name="zboss_api_internal.h" />
+      <file file_name="zboss_api_nwk.h" />
+      <file file_name="zboss_api_zcl.h" />
+      <file file_name="zboss_api_zdo.h" />
+      <file file_name="zboss_api_zgp.h" />
+    </folder>
+  </project>
+</solution>
